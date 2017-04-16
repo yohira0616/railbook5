@@ -1,0 +1,91 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+modernjs:
+  id: 1
+  isbn: 978-4-7741-8411-1
+  title: 改訂新版JavaScript本格入門
+  price: 2980
+  publish: 技術評論社
+  published: 2016-09-30
+  dl: false
+
+jsp:
+  id: 2
+  isbn: 978-4-7980-4803-1
+  title: はじめてのJSP&サーブレット 第2版
+  price: 2800
+  publish: 秀和システム
+  published: 2016-09-27
+  dl: false
+
+java:
+  id: 3
+  isbn: 978-4-7741-8030-4
+  title: Javaポケットリファレンス
+  price: 2680
+  publish: 技術評論社
+  published: 2016-03-18
+  dl: true
+
+vcpp:
+  id: 4
+  isbn: 978-4-8222-9876-0
+  title: アプリを作ろう！ Visual C++入門
+  price: 2000
+  publish: 日経BP社
+  published: 2016-06-22
+  dl: true
+
+android:
+  id: 5
+  isbn: 978-4-8222-9644-5
+  title: アプリを作ろう！ Android入門
+  price: 2000
+  publish: 日経BP社
+  published: 2015-08-21
+  dl: false
+
+php:
+  id: 6
+  isbn: 978-4-7981-3547-2
+  title: 独習PHP 第3版 
+  price: 3200
+  publish: 翔泳社
+  published: 2016-04-08
+  dl: true
+
+swift:
+  id: 7
+  isbn: 978-4-7741-7984-1
+  title: Swiftポケットリファレンス 
+  price: 2780
+  publish: 技術評論社
+  published: 2016-03-04
+  dl: false
+
+docker:
+  id: 8
+  isbn: 978-4-7981-4102-2
+  title: プログラマのためのDocker教科書
+  price: 3000
+  publish: 翔泳社
+  published: 2015-11-19
+  dl: false
+
+angular:
+  id: 9
+  isbn: 978-4-7741-7568-3
+  title: AngularJSアプリケーションプログラミング
+  price: 3700
+  publish: 技術評論社
+  published: 2015-08-19
+  dl: false
+
+aspnet:
+  id: 10
+  isbn: 978-4-7981-4402-3
+  title: 独習ASP.NET 第5版
+  price: 3800
+  publish: 翔泳社
+  published: 2016-01-21
+  dl: false
