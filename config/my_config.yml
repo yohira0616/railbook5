@@ -1,0 +1,16 @@
+COMMON: &COMMON
+  author: 'YAMADA'
+  logo:
+    source: "http://www.google.com"
+    width: 215
+    height: 67
+
+development:
+  hoge: "dev"
+  <<: *COMMON
+test:
+  hoge: "test"
+  <<: *COMMON
+production:
+  hoge: "pro"
+  <<: *COMMON

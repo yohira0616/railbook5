@@ -1,0 +1,24 @@
+p#notice = notice
+
+p
+  strong Isbn:
+  = @book.isbn
+p
+  strong Title:
+  = @book.title
+p
+  strong Price:
+  = @book.price
+p
+  strong Publish:
+  = @book.publish
+p
+  strong Published:
+  = @book.published
+p
+  strong Dl:
+  = @book.dl
+
+= link_to 'Edit', edit_book_path(@book)
+'  |
+= link_to 'Back', books_path

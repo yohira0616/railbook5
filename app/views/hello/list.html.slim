@@ -1,0 +1,17 @@
+table
+  tr
+    th ISBNコード
+    th 書名
+    th 価格
+    th 出版社
+    th 刊行日
+    th ダウンロード
+  - @books.each do |book|
+    tr
+      td = book.isbn
+      td = book.title
+      td = book.price
+      td = book.publish
+      td = book.published
+      td = book.dl
+
