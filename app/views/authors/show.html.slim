@@ -1,0 +1,24 @@
+p#notice = notice
+
+p
+  strong User:
+  = @author.user
+p
+  strong Name:
+  = @author.name
+p
+  strong Birth:
+  = @author.birth
+p
+  strong Address:
+  = @author.address
+p
+  strong Ctype:
+  = @author.ctype
+p
+  strong Photo:
+  = @author.photo
+
+= link_to 'Edit', edit_author_path(@author)
+'  |
+= link_to 'Back', authors_path

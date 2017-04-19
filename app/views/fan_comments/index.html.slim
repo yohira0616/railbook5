@@ -1,0 +1,27 @@
+h1 Listing fan_comments
+
+table
+  thead
+    tr
+      th Author no
+      th Name
+      th Body
+      th Deleted
+      th
+      th
+      th
+
+  tbody
+    - @fan_comments.each do |fan_comment|
+      tr
+        td = fan_comment.author_no
+        td = fan_comment.name
+        td = fan_comment.body
+        td = fan_comment.deleted
+        td = link_to 'Show', fan_comment
+        td = link_to 'Edit', edit_fan_comment_path(fan_comment)
+        td = link_to 'Destroy', fan_comment, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Fan comment', new_fan_comment_path

@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Book:
+  = @review.book
+p
+  strong User:
+  = @review.user
+p
+  strong Status:
+  = @review.status
+p
+  strong Body:
+  = @review.body
+
+= link_to 'Edit', edit_review_path(@review)
+'  |
+= link_to 'Back', reviews_path
