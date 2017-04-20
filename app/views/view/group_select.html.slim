@@ -1,0 +1,3 @@
+= form_for(@review) do |f|
+  | レビュー対象書籍
+  = f.grouped_collection_select :book_id, @authors, :books, :name, :id, :title
