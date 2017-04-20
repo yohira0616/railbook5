@@ -1,0 +1,7 @@
+= form_for(@book) do |f|
+  .field
+    = f.label :isbn
+    = f.text_field :isbn,size:25
+
+  .actions
+    = f.submit
