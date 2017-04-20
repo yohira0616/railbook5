@@ -29,4 +29,8 @@ class ViewController < ApplicationController
     @review=Review.new
     @authors=Author.all
   end
+
+  def dat_select
+    @book=Book.find(1)
+  end
 end
