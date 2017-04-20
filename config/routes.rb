@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   # 第4章 view開発
   get 'view/keyword'
   post 'keyword/search'
+  get 'view/form_tag'
+  post 'view/create'
 
   resources :books
 end
