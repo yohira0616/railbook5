@@ -11,4 +11,8 @@ class ViewController < ApplicationController
   def field
     @book=Book.new
   end
+
+  def html5
+    @book=Book.new
+  end
 end

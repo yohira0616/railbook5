@@ -1,0 +1,26 @@
+= form_for(@book) do |f|
+  | 色選択ボックス
+  = f.color_field :isbn
+  | 日付入力ボックス
+  = f.date_field :published
+  | 時刻入力ボックス
+  = f.time_field :published
+  | 日付時刻入力ボックス
+  = f.datetime_field :published
+  | 月入力ボックス
+  = f.month_field :published
+  | 週入力ボックス
+  = f.week_field :published
+  | メール入力ボックス
+  = f.email_field :isbn, size: 25, maxlength: 30
+  | 数値入力ボックス
+  = f.number_field :price, min: 10, max: 10000, step: 10
+  | スライダー
+  = f.range_field :isbn, size: 10, maxlength: 15
+  | 検索ボックス
+  = f.search_field :isbn, size: 10, maxlength: 15
+  | 電話番号入力ボックス
+  = f.telephone_field :isbn, size: 15, maxlength: 20
+  | URL入力ボックス
+  = f.url_field :isbn, size: 10, maxlength: 15
+

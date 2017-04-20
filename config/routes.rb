@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   post 'view/create'
   get 'view/form_for'
   get 'view/field'
+  get 'view/html5'
 
   resources :books
 end
