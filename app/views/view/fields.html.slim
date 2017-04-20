@@ -1,0 +1,16 @@
+= form_for(@user, url: {action: :create}) do |f|
+  .field
+    = f.label :username, 'ユーザー名:'
+    = f.text_field :username
+  .field
+    = f.label :email, 'メールアドレス'
+    = f.text_field :email
+  = field_set_tag '著者情報' do
+    = fields_for @user.author do |af|
+      .field
+        = af.label :name, '著者名'
+        = af.text_field :name
+      .field
+        = af.label :birth, '誕生日:'
+        = af.text_field :birth
+  = f.submit '登録'

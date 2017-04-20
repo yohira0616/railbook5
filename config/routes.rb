@@ -22,6 +22,8 @@ Rails.application.routes.draw do
   get 'view/col_select'
   get 'view/group_select'
   get 'view/dat_select'
+  get 'view/col_radio'
+  get 'view/fields'
 
   resources :books
 end
