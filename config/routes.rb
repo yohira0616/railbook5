@@ -10,5 +10,9 @@ Rails.application.routes.draw do
   get 'hello/view'
   get 'hello/list'
 
+  # 第4章 view開発
+  get 'view/keyword'
+  post 'keyword/search'
+
   resources :books
 end
