@@ -16,8 +16,8 @@ class RecordController < ApplicationController
   end
 
   def ph1
-    @books=Book.where('publish = ? AND price >= ?',
-        params[:publish], params[:price])
+    @books=Book.where('publish = :publish AND price >= :price',
+        publish: params[:publish], price: params[:price])
     render 'hello/list'
   end
 
