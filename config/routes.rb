@@ -42,6 +42,8 @@ Rails.application.routes.draw do
   get 'record/where'
   post 'record/ph1'
   get 'record/keyword'
+  get 'record/not'
+  get 'record/where_or'
 
   resources :books
 end
