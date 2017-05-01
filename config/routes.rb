@@ -35,6 +35,7 @@ Rails.application.routes.draw do
   get 'view/path'
   get 'view/helper'
   get 'view/helper2'
+  get 'view/adopt'
 
   resources :books
 end

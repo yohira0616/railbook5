@@ -1,4 +1,5 @@
 class ViewController < ApplicationController
+  layout 'product'
 
   def form_tag
     @book=Book.new
@@ -41,6 +42,10 @@ class ViewController < ApplicationController
   def col_radio
     @book=Book.new(publish: '技術評論社')
     @books=Book.select(:publish).distinct
+  end
+
+  def adopt
+    render layout: 'sub'
   end
 
 
