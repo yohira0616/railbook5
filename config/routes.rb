@@ -29,6 +29,7 @@ Rails.application.routes.draw do
   get 'view/new'
   get 'members/login'
   get 'view/mailto'
+  get 'view/image_tag'
 
   resources :books
 end
