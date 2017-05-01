@@ -30,6 +30,8 @@ Rails.application.routes.draw do
   get 'members/login'
   get 'view/mailto'
   get 'view/image_tag'
+  get 'view/video'
+  get 'view/audio'
 
   resources :books
 end
