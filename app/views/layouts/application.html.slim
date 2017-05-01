@@ -3,8 +3,11 @@ html
     title Railbook5
     = csrf_meta_tags
 
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = auto_discovery_link_tag(:rss, {controller: :books, action: :index, id: :rails},
+            title: 'サーバサイドの学び舎')
+    = favicon_link_tag
 
   body
     = yield
