@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   get 'view/audio'
   get 'view/path'
   get 'view/helper'
+  get 'view/helper2'
 
   resources :books
 end
