@@ -36,4 +36,9 @@ class RecordController < ApplicationController
     render 'hello/list'
   end
 
+  def reorder
+    @books=Book.order(:publish).reorder(:price)
+    render 'books/index'
+  end
+
 end
