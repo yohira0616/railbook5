@@ -46,4 +46,8 @@ class RecordController < ApplicationController
     render 'hello/list'
   end
 
+  def select2
+    @pubs=Book.select(:publish).distinct.order(:publish)
+  end
+
 end
