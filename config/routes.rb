@@ -38,6 +38,7 @@ Rails.application.routes.draw do
   get 'view/adopt'
   # 第5章 Model開発
   get 'record/find'
+  get 'record/find_by'
 
   resources :books
 end
