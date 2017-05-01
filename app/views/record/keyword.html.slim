@@ -1,0 +1,8 @@
+= form_tag action: :ph1 do
+  .field
+    = label_tag :publish, '出版社:'
+    = text_field_tag :publish
+  .field
+    = label_tag(:price, '最低価格:')
+    = text_field_tag :price
+  = submit_tag '検索'

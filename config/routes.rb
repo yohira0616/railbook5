@@ -40,6 +40,8 @@ Rails.application.routes.draw do
   get 'record/find'
   get 'record/find_by'
   get 'record/where'
+  post 'record/ph1'
+  get 'record/keyword'
 
   resources :books
 end
