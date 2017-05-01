@@ -36,6 +36,8 @@ Rails.application.routes.draw do
   get 'view/helper'
   get 'view/helper2'
   get 'view/adopt'
+  # 第5章 Model開発
+  get 'record/find'
 
   resources :books
 end
