@@ -44,6 +44,7 @@ Rails.application.routes.draw do
   get 'record/keyword'
   get 'record/not'
   get 'record/where_or'
+  get 'record/order'
 
   resources :books
 end
