@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :books
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  get 'hello/index', to:'hello#index'
+  get 'hello/index', to: 'hello#index'
   get 'hello/view'
   get 'hello/list'
 
@@ -39,6 +39,7 @@ Rails.application.routes.draw do
   # 第5章 Model開発
   get 'record/find'
   get 'record/find_by'
+  get 'record/where'
 
   resources :books
 end

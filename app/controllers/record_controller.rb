@@ -10,4 +10,9 @@ class RecordController < ApplicationController
     render 'books/show'
   end
 
+  def where
+    @books=Book.where(publish: '技術評論社')
+    render 'hello/list'
+  end
+
 end
