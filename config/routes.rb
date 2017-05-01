@@ -32,6 +32,7 @@ Rails.application.routes.draw do
   get 'view/image_tag'
   get 'view/video'
   get 'view/audio'
+  get 'view/path'
 
   resources :books
 end
