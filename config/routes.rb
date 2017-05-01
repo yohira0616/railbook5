@@ -25,6 +25,10 @@ Rails.application.routes.draw do
   get 'view/col_radio'
   get 'view/fields'
   get 'view/link'
+  get 'view/urlfor'
+  get 'view/new'
+  get 'members/login'
+  get 'view/mailto'
 
   resources :books
 end

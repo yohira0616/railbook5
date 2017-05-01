@@ -1,0 +1,6 @@
+= url_for(action: :new)
+= url_for(controller: :books, action: :show, id: 5, anchor: 'rails', charset: 'utf8')
+= url_for(action: :login, controller: :members, only_path: false, protocol: 'https')
+- @book=Book.find(2)
+  - url_for(@book)
+  - url_for(:back)
