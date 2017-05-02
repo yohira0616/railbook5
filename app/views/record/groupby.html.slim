@@ -1,0 +1,8 @@
+table
+  tr
+    th 出版社
+    th 価格
+  - @books.each do |book|
+    tr
+      td = book.publish
+      td #{book.avg_price.round}円

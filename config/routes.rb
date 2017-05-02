@@ -47,6 +47,9 @@ Rails.application.routes.draw do
   get 'record/order'
   get 'record/reorder'
   get 'record/select'
+  get 'record/last'
+  get 'record/groupby'
+  get 'record/havingby'
 
   resources :books
 end
