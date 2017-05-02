@@ -1,0 +1,6 @@
+ul
+  li ユーザー名:#{@user.username}
+  li パスワード:#{@user.email}
+  - unless @user.author.nil?
+    li 著者名: #{@user.author.name}
+    li 住所: #{@user.author.address}

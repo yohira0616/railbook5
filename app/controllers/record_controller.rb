@@ -181,5 +181,9 @@ class RecordController < ApplicationController
     @book=Book.find_by(isbn: '978-4-7741-8411-1')
   end
 
+  def hasone
+    @user = User.find_by(username: 'yyamada')
+  end
+
 
 end
