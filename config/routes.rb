@@ -55,6 +55,7 @@ Rails.application.routes.draw do
   get 'record/unscope2'
   get 'record/none'
   get 'record/pluck'
+  get 'record/exists'
 
   resources :books
 end
