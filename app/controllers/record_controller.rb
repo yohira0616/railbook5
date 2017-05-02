@@ -112,4 +112,8 @@ class RecordController < ApplicationController
     render 'hello/list'
   end
 
+  def def_scope
+    render plain: Review.all.inspect
+  end
+
 end
