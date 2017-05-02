@@ -1,0 +1,8 @@
+table
+  tr
+    th 出版社
+    th 価格
+  - @books.each do |key,value|
+    tr
+      td = key
+      td #{value.round}円

@@ -121,4 +121,18 @@ class RecordController < ApplicationController
     render plain: "#{cnt}件です"
   end
 
+  def average
+    price=Book.where(publish: '技術評論社').average(:price)
+    render plain: "平均価格は#{price}円です。"
+  end
+
+  def groupby2
+    @books=Book.group(:publish).average(:price)
+  end
+
+  def literal_sql
+    @books=Book.find_by_sql(['SELECT publish,AVG(price) AS avg_price FROM "books" GROUP BY publish HAVING AVG(price) >= ?', 2500])
+    render 'record/groupby'
+  end
+
 end
