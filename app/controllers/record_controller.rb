@@ -173,5 +173,9 @@ class RecordController < ApplicationController
     render plain: "ステータス:#{@review.status}"
   end
 
+  def belongs
+    @review=Review.find(3)
+  end
+
 
 end

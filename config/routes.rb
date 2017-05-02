@@ -63,6 +63,7 @@ Rails.application.routes.draw do
   get 'record/groupby2'
   get 'record/literal_sql'
   get 'record/update_all'
+  get 'record/belongs'
 
   resources :books
 end

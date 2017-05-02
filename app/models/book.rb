@@ -4,7 +4,7 @@ class Book < ApplicationRecord
   scope :top10, -> {newer.limit(10)}
 
   validates :isbn,
-      precence: true,
+      presence: true,
       uniqueness: true,
       length: {is: 17},
       format: {with: /\A[0-9]{3}-[0-9]{1}-[0-9]{3,5}-[0-9]{4}-[0-9X]{1}\z/}
