@@ -107,4 +107,9 @@ class RecordController < ApplicationController
     render plain: "存在するか？: #{flag}"
   end
 
+  def scope
+    @books=Book.gihyo.top10
+    render 'hello/list'
+  end
+
 end
