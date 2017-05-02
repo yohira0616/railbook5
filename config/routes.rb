@@ -50,6 +50,9 @@ Rails.application.routes.draw do
   get 'record/last'
   get 'record/groupby'
   get 'record/havingby'
+  get 'record/where2'
+  get 'record/unscope'
+  get 'record/unscope2'
 
   resources :books
 end
