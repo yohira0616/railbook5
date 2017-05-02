@@ -167,5 +167,11 @@ class RecordController < ApplicationController
     render plain: e.message
   end
 
+  def enum_rec
+    @review=Review.find(1)
+    @review.published!
+    render plain: "ステータス:#{@review.status}"
+  end
+
 
 end
