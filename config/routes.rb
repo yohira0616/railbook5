@@ -64,6 +64,7 @@ Rails.application.routes.draw do
   get 'record/literal_sql'
   get 'record/update_all'
   get 'record/belongs'
+  get 'record/hasmany'
 
   resources :books
 end

@@ -1,0 +1,5 @@
+h2 #{@book.title}のレビュー
+hr
+ul
+- @book.reviews.each do |review|
+  li = review.body
