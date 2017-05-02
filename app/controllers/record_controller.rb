@@ -145,5 +145,27 @@ class RecordController < ApplicationController
     render plain: "#{cnt}件のデータを更新しました"
   end
 
+  def destory_all
+    Book.where.not(publish: '技術評論社').destroy_all
+    render plain: '削除完了'
+  end
+
+  def transact
+    Book.transation do
+      b1=Book.new(
+          isbn: 'hoge'
+      )
+      b1.save!
+      raise '例外:処理はキャンセルされました'
+      b2=Book.new(
+          isbn: 'fuga'
+      )
+      b2.save!
+    end
+    render plain: 'トランザクションは成功しました'
+  rescue => e
+    render plain: e.message
+  end
+
 
 end
