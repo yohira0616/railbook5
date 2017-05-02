@@ -78,8 +78,23 @@ class RecordController < ApplicationController
   end
 
   def unscope2
-    @books=Book.where(publish: '技術評論社',dl:true).order(:price)
+    @books=Book.where(publish: '技術評論社', dl: true).order(:price)
                .unscope(:where, :dl)
+    render 'books/index'
+  end
+
+  def none
+    case params[:id]
+      when 'all'
+        @books= Book.all
+      when 'new'
+        @books= Book.order('published DESC').limit(5)
+      when 'cheap'
+        @books= Book.order(:price).limit(5)
+      else
+        @books= Book.none
+
+    end
     render 'books/index'
   end
 
