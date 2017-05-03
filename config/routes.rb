@@ -69,5 +69,9 @@ Rails.application.routes.draw do
   get 'record/has_and_belongs'
   get 'record/has_many_through'
 
+  # 第6章 Controller開発
+  get 'ctrl/para'
+  get 'ctrl/para_array'
+
   resources :books
 end
