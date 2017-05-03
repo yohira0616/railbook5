@@ -1,0 +1,8 @@
+ul
+  li ユーザー名:#{@user.username}
+  li メールアドレス:#{@user.email}
+  - unless @user.books.empty?
+    li レビューした書籍:
+      ul
+      - @user.books.each do |book|
+        li #{book.title}
