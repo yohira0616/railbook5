@@ -3,6 +3,7 @@ class Book < ApplicationRecord
   scope :newer, -> {order(published: :desc)}
   scope :top10, -> {newer.limit(10)}
   has_many :reviews
+  has_and_belongs_to_many :authors
 
   validates :isbn,
       presence: true,
