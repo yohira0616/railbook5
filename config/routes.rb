@@ -72,6 +72,8 @@ Rails.application.routes.draw do
   # 第6章 Controller開発
   get 'ctrl/para'
   get 'ctrl/para_array'
+  post 'ctrl/upload_process'
+  get 'ctrl/upload'
 
   resources :books
 end

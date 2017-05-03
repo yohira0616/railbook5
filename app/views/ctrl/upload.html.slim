@@ -1,0 +1,4 @@
+= form_tag({action: :upload_process},multipart: true) do
+  label
+    = file_field_tag :upfile,size: 50
+  = submit_tag 'アップロード'
